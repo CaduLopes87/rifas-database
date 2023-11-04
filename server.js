@@ -1,21 +1,8 @@
-// import { createServer } from "node:http";
-
-// const server = createServer((req, res) => {
-//     res.write('Hello World!!');
-
-//     res.end();
-// });
-
-// server.listen(3333);
-
 import { fastify } from "fastify";
-// import { DataBaseMemory } from "./dataBaseMemory.js";
 import { DataBasePostgres } from "./database-postgres.js";
 
 const server = fastify();
-// const dataBase = new DataBaseMemory();
 const dataBase = new DataBasePostgres();
-
 
 server.post('/rifas', async (request, reply) => {
 

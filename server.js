@@ -1,5 +1,5 @@
-import { fastify } from "fastify";
-import fastifyCors from 'fastify-cors';
+import fastify from "fastify";
+import fastifyCors from "@fastify/cors";
 import { DataBasePostgres } from "./database-postgres.js";
 
 const server = fastify();

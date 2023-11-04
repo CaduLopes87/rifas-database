@@ -1,24 +1,24 @@
-POST http://localhost:3333/rifas
+POST https://contabilizador-de-rifas.onrender.com/rifas
 Content-Type: application/json
 
 {
-    "nome": "Dudu",
+    "nome": "Cadu",
     "numero": 456,
     "pagamento": "pendente"
 }
 
 ###
-GET http://localhost:3333/rifas
+GET https://contabilizador-de-rifas.onrender.com/rifas
 ###
-PUT http://localhost:3333/rifas/123
+PUT https://contabilizador-de-rifas.onrender.com/rifas/123
 Content-Type: application/json
 
 {
-    "nome": "Dudu",
-    "numero": 123,
-    "pagamento": "pendente"
+    "nome": "Dudu 2",
+    "numero": 789,
+    "pagamento": "ok"
 }
 
 ###
 
-DELETE http://localhost:3333/rifas/123
+DELETE https://contabilizador-de-rifas.onrender.com/rifas/789

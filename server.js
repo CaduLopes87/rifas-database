@@ -4,6 +4,13 @@ import { DataBasePostgres } from "./database-postgres.js";
 const server = fastify();
 const dataBase = new DataBasePostgres();
 
+server.register(require('fastify-cors'), {
+    origin: 'http://192.168.1.102:5500/index.html',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+    credentials: true,
+});
+
 server.post('/rifas', async (request, reply) => {
 
     const { nome, numero, pagamento } = request.body;

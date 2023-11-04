@@ -6,3 +6,6 @@ node_modules
 
 #Ignorar arquivos js
 dataBaseMemory.js
+
+#ignorar arquivos de teste
+routes.http

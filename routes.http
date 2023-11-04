@@ -1,0 +1,26 @@
+POST http://localhost:3333/rifas
+Content-Type: application/json
+
+{
+    "nome": "Dudu",
+    "numero": 456,
+    "pagamento": "pendente"
+}
+
+###
+GET http://localhost:3333/rifas
+###
+PUT http://localhost:3333/rifas/456
+# PUT  /rifas/456 HTTP/1.1
+# Host: localhost:3333
+Content-Type: application/json
+
+{
+    "nome": "Cadu 2",
+    "numero": 789,
+    "pagamento": "Ok"
+}
+
+###
+
+DELETE http://localhost:3333/rifas/123

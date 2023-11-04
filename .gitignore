@@ -1,0 +1,8 @@
+#Ignorar gerenciador de pacotes
+node_modules
+
+#Ignorar arquivos sensíveis 
+.env
+
+#Ignorar arquivos js
+dataBaseMemory.js

@@ -7,7 +7,7 @@ const server = fastify();
 const dataBase = new DataBasePostgres();
 
 server.register(fastifyCors, {
-    origin: 'http://192.168.1.102:5500/index.html',
+    origin: 'http://192.168.1.102:5500',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
     credentials: true,

@@ -2,8 +2,8 @@ POST https://contabilizador-de-rifas.onrender.com/rifas
 Content-Type: application/json
 
 {
-    "nome": "Cadu",
-    "numero": 456,
+    "nome": "Jose",
+    "numero": 123,
     "pagamento": "pendente"
 }
 

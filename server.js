@@ -1,10 +1,11 @@
 import { fastify } from "fastify";
+import fastifyCors from 'fastify-cors';
 import { DataBasePostgres } from "./database-postgres.js";
 
 const server = fastify();
 const dataBase = new DataBasePostgres();
 
-server.register(require('fastify-cors'), {
+server.register(fastifyCors, {
     origin: 'http://192.168.1.102:5500/index.html',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],

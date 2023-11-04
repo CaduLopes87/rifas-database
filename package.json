@@ -18,6 +18,7 @@
     "postgres": "^3.4.3"
   },
   "devDependencies": {
+    "@types/fastify-cors": "^2.1.0",
     "dotenv": "^16.3.1"
   }
 }

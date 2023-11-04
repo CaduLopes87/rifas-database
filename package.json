@@ -13,7 +13,7 @@
   "author": "Cadu",
   "license": "ISC",
   "dependencies": {
-    "@fastify/cors": "^7.0.0",
+    "@fastify/cors": "^8.4.1",
     "fastify": "^4.24.3",
     "postgres": "^3.4.3"
   },

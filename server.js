@@ -6,7 +6,7 @@ const server = fastify();
 const dataBase = new DataBasePostgres();
 
 server.register(fastifyCors, {
-    origin: 'https://contabilizador-de-rifas.vercel.app/',
+    origin: 'https://contabilizador-de-rifas.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
     credentials: true,

@@ -6,7 +6,18 @@ const server = fastify();
 const dataBase = new DataBasePostgres();
 
 server.register(fastifyCors, {
-    origin: 'https://contabilizador-de-rifas.vercel.app',
+    origin: (origin, callback) => {
+        const allowedOrigins = [
+            'https://contabilizador-de-rifas.vercel.app',
+            'http://192.168.1.114:5500'
+        ];
+        
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true); // Permitir a origem
+        } else {
+            callback(new Error('Not allowed by CORS')); // Bloquear a origem
+        }
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
     credentials: true,
